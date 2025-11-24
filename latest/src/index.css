@@ -1,0 +1,96 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 22px;
+}
+
+body {
+  min-height: 100vh;
+  font-family: "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans",
+    "Droid Sans", "Helvetica Neue", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+main {
+  /* width: 100%; */
+  display: flex;
+  flex-direction: column;
+  /* flex-grow: 1; */
+  justify-content: center;
+  align-items: center;
+}
+
+h4 {
+  text-transform: lowercase;
+}
+main ul {
+  list-style: none;
+}
+/* main ul svg {
+  color: rgb(163, 163, 243);
+  outline: none;
+}
+main .item svg:hover {
+  color: red;
+}  */
+input,
+button {
+  margin: 5px;
+  padding: 8px;
+}
+ul {
+  list-style: none;
+  padding: 0;
+}
+li {
+  margin: 10px 0;
+}
+.bordername {
+  border: 1px solid black;
+  margin: 15px;
+  width: 100%;
+}
+.products {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  gap: 10px;
+  padding: 20px;
+}
+.product {
+  flex-grow: 1;
+}
+.backword {
+  min-height: 100vh;
+  background-image: url(./assets/sign-up.jpg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-position: center;
+  background-size: cover;
+}
+
+.loginbg {
+  min-height: 100vh;
+  background-image: url(./assets/login.jpg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-position: center;
+  background-size: cover;
+}
+
+/* Add backdrop blur for better readability */
+.loginbg .MuiPaper-root,
+.backword .MuiPaper-root {
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}

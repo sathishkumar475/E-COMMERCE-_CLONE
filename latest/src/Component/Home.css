@@ -1,0 +1,58 @@
+.menu-wrapper {
+  position: relative; /* dropdown will be positioned under this */
+  display: inline-block;
+}
+
+.menu-toggle {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  user-select: none;
+}
+
+/* Simple hamburger style */
+.hamburger {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.hamburger span {
+  width: 18px;
+  height: 2px;  
+  background: #333;
+  display: block;
+}
+
+/* DROPDOWN STYLES */
+.dropdown-menu {
+  position: absolute;
+  top: 100%; /* just below MENU */
+  left: 0;
+  background: #ffffff;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  min-width: 160px;
+  padding: 4px 0;
+  margin-top: 4px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+  z-index: 1000; /* make sure it’s above header content */
+}
+
+.dropdown-menu ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.dropdown-menu li {
+  padding: 8px 12px;
+  font-size: 14px;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.dropdown-menu li:hover {
+  background-color: #f3f3f3;
+}
